@@ -1,0 +1,47 @@
+{
+    "app": {
+        "name": "PragyanAI PDF Studio",
+        "version": "1.0.0",
+        "environment": "development"
+    },
+
+    "api": {
+        "base_url": "http://127.0.0.1:8000",
+        "health": "/api/health",
+        "merge": "/api/merge",
+        "files": "/api/files",
+        "clear": "/api/clear"
+    },
+
+    "upload": {
+        "max_files": 20,
+        "max_file_size_mb": 50,
+        "allowed_extensions": [
+            ".pdf",
+            ".jpg",
+            ".jpeg",
+            ".png"
+        ],
+        "allowed_mime_types": [
+            "application/pdf",
+            "image/jpeg",
+            "image/png"
+        ]
+    },
+
+    "merge": {
+        "minimum_files": 2,
+        "output_filename": "PragyanAI-Merged.pdf",
+        "output_type": "application/pdf"
+    },
+
+    "features": {
+        "pdf_merge": true,
+        "image_merge": true,
+        "drag_and_drop": true,
+        "file_reordering": true,
+        "file_preview": true,
+        "download": true,
+        "server_file_management": true
+    }
+}
